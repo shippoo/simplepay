@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆形边框 + 填充 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="oval"
+    android:useLevel="true"
+    tools:ignore="MissingDefaultResource">
+
+    <size
+        android:width="120dp"
+        android:height="120dp" />
+
+    <stroke
+        android:width="0dp"
+        android:color="#ff940000" />
+
+    <solid android:color="#ff940000" />
+
+</shape>

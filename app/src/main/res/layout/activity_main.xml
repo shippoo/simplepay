@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:lh="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <Button
+        android:id="@+id/bt_setting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/setting"
+        android:onClick="clsSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:background="@drawable/log"
+        android:onClick="clsLog"
+        app:layout_constraintEnd_toStartOf="@+id/bt_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.sjk.simplepay.DrawableSwitch
+        android:id="@+id/drawableSwitch"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        lh:circleColor="#F9F9F9"
+        lh:isSwitchOn="false"
+        lh:radius="20dp"
+        lh:switchOffColor="#D8D8D8"
+        lh:switchOnColor="#6AB344"
+        lh:textColor="#1C1C0F" />
+
+    <com.sjk.simplepay.DrawableSwitch
+        android:id="@+id/drawableSwitch2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/drawableSwitch"
+        lh:circleColor="#F9F9F9"
+        lh:isSwitchOn="false"
+        lh:radius="20dp"
+        lh:switchOffColor="#D8D8D8"
+        lh:switchOnColor="#6AB344"
+        lh:textColor="#1C1C0F" />
+
+    <com.sjk.simplepay.DrawableSwitch
+        android:id="@+id/drawableSwitch3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        lh:circleColor="#F9F9F9"
+        lh:isSwitchOn="false"
+        lh:layout_constraintStart_toEndOf="@+id/img_yspay"
+        lh:layout_constraintTop_toBottomOf="@+id/drawableSwitch2"
+        lh:radius="20dp"
+        lh:switchOffColor="#D8D8D8"
+        lh:switchOnColor="#6AB344"
+        lh:textColor="#1C1C0F" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:background="@drawable/start_bt_shape"
+        android:onClick="btn_startClick"
+        android:text="开启"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_alipay"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/alipay"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/img_wx"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/wx"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/img_alipay" />
+
+    <ImageView
+        android:id="@+id/img_yspay"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/yspay"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/img_wx"
+        app:layout_constraintTop_toBottomOf="@+id/img_wx" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+</android.support.constraint.ConstraintLayout>
