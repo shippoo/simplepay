@@ -6,7 +6,8 @@
 }
 
 #### 软件架构
-软件架构说明
+本app基于virtual xposed框架运行，请先安装xposed框架，再安装并导入本app,
+xposed框架安装方法请参照xposed官网。
 
 
 #### 安装教程
